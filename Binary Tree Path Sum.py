@@ -21,6 +21,8 @@ b.right = e
 c.left = f
 c.right = g
 
+from collections import deque
+
 def has_path(node,s):
     if not node:
         return False

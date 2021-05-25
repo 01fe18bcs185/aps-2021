@@ -1,15 +1,12 @@
 # Input: 23   
 # Output: true (23 is a happy number)  
 # Explanations: Here are the steps to find out that 23 is a happy number:
-# 2**2 + 3**2 = 13
-# 1**2 + 3**2 = 10
-# 1**2 + 0**2 = 1
-
 n = 24
 
 def cal(n):
     res = sum(int(x)**2 for x in str(n))
     return res
+
 
 slow = fast = n
 
